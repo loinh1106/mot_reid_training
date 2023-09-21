@@ -21,6 +21,8 @@ data/
 ```
 
 ## Training ReID
-```bash run.sh```
+```
+bash run.sh
+```
 
-After training, the weight will be stored in the `lightning_logs/` folder. Navigate to this folder and copy the corresponding epoch weight of each model to the corresponding folder in `output/weight`.
+Before training create `logs/` folder to save status from every running state .After training, the weight will be stored in the `lightning_logs/` folder. Navigate to this folder and copy the corresponding epoch weight of each model to the corresponding folder in `output/weight`.
