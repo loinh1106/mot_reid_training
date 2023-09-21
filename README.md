@@ -19,6 +19,17 @@ data/
 │   └── train/
 └──
 ```
+## Pretrained on ImageNet
+Put the pretrained model like the following structure
+```
+├── datasets/
+│   ├── reid/
+│   ├── pretrain/
+│       ├── resnet50-19c8e357.pth
+│       ├── -------
+│       └── jx_vit_base_p16_224-80ecf9dd.pth
+
+```
 
 ## Training ReID
 ```
