@@ -1,6 +1,6 @@
 MODEL:
   PRETRAIN_CHOICE: 'imagenet'
-  PRETRAIN_PATH: '/kaggle/working/mot_reid_training/datasets/pretrain/jx_vit_base_p16_224-80ecf9dd.pth'
+  #PRETRAIN_PATH: '/kaggle/working/mot_reid_training/datasets/pretrain/jx_vit_base_p16_224-80ecf9dd.pth'
   PRETRAIN_NAME: 'jx_vit_base_p16_224-80ecf9dd.pth'
   METRIC_LOSS_TYPE: 'triplet'
   IF_LABELSMOOTH: 'off'
@@ -73,4 +73,4 @@ TEST:
   FIC: True
 
 OUTPUT_DIR: "./output"
-CHECKPOINT_PATH: "epoch=4-Val_mAP=0.62876-Val_CMC@rank1=0.96140-Val_CMC@rank5=0.98871.ckpt"
+CHECKPOINT_PATH: "/kaggle/input/ckp-transreid/epoch4-Val_mAP0.62876-Val_CMCrank10.96140-Val_CMCrank50.98871.ckpt"
