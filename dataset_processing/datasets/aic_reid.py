@@ -10,11 +10,12 @@ import os
 
 class AIC_reid(BaseImageDataset):
     def __init__(
-        self, root="./", label_file=None, verbose=True, relabel=False, **kwargs
+        self, root="./", label_file=None, verbose=True, relabel=False,camids ='c00',**kwargs
     ):
         f = open(label_file, "r")
         f = f.readlines()
 
+        self.camids = camids
         self.root = root
         self.file = f
         self.num_persons = None
@@ -29,11 +30,11 @@ class AIC_reid(BaseImageDataset):
             pid = pid.replace("\n", "")
             #print(os.path.basename(img_path).split('_')[-4:])
             try:
-                camid = 'c00'
+                camid = self.camids
                 scene, frame_id, person_id = img_path.split("_")
             except:
                 #print(img_path.split("_")[-4:])
-                camid = 'c00'
+                camid = self.camids
                 scene, frame_id, person_id = os.path.basename(img_path).split('_')[-4:]
                 # exit(0)
             if pid not in persons:

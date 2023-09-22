@@ -25,7 +25,7 @@ def make_data_loader(cfg: Dict[str, Any]) -> Union[DataLoader, DataLoader, int, 
         cfg["DATASETS"]["ROOT_DIR"], cfg["DATASETS"]["GALLERY"]
     ).dataset
     dataset_gallery = AIC_reid(
-        cfg["DATASETS"]["ROOT_DIR"], cfg["DATASETS"]["QUERY"]
+        cfg["DATASETS"]["ROOT_DIR"], cfg["DATASETS"]["QUERY"], camids='c01'
     ).dataset
 
     # num_classes = dataset_train.num_persons
