@@ -91,7 +91,7 @@ def train(cfg):
 
 if __name__ == "__main__":
     #############################  Config processing  ##################################################################################
-    cfg = util.load_defaults(["configs/dataset.yaml", "configs/resnet50.yaml"])
+    cfg = util.load_defaults(["configs/dataset.yaml", "configs/transformer.yaml"])
 
     # set seed
     util.set_seed(cfg["SOLVER"]["SEED"])
