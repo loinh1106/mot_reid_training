@@ -1,5 +1,5 @@
 DATASETS:
-  ROOT_DIR: /home/loi/loi_code/train_reid/data
+  ROOT_DIR: /kaggle/input/person-reid/person_reid
   TRAIN_FILE: 'datasets/reid/train_set_reid.txt'
   GALLERY: 'datasets/reid/gallery_set_reid.txt'
   QUERY: 'datasets/reid/query_set_reid.txt'

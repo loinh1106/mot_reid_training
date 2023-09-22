@@ -1,6 +1,6 @@
 MODEL:
   PRETRAIN_CHOICE: 'imagenet'
-  # PRETRAIN_PATH: 'output/weight/resnet50-19c8e357.pth'
+  PRETRAIN_PATH: 'output/weight/resnet50-19c8e357.pth'
   PRETRAIN_NAME: 'resnet50-19c8e357.pth'
 
   LAST_STRIDE: 1
